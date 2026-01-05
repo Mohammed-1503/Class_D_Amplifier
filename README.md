@@ -23,6 +23,7 @@ VI.	The filtered signal drives the speaker.
 In this design, the audio signal is not amplified directly. Instead, it controls the duty cycle of a high frequency switching signal, which is later converted back into an amplified audio waveform.
 
 4. Component Selection and Design Logic
+
 4.1 LM311 Comparator
 The LM311 is used as the heart of the PWM generation stage.
 Reason for selection:
