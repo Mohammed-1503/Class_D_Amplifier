@@ -14,12 +14,12 @@ The main objectives of this Task are listed below:
 
 3. Overall Working Principle
 The working of the designed Class-D amplifier can be summarized as follows:
-1.	The audio input signal is fed into a comparator.
-2.	The comparator converts the audio signal into a PWM (Pulse Width Modulated) signal.
-3.	This PWM signal is conditioned and fed to a MOSFET gate driver.
-4.	The gate driver switches the power MOSFETs at high frequency.
-5.	The MOSFET output is filtered using an LC filter.
-6.	The filtered signal drives the speaker.
+I.	The audio input signal is fed into a comparator.
+II.	The comparator converts the audio signal into a PWM (Pulse Width Modulated) signal.
+III.	This PWM signal is conditioned and fed to a MOSFET gate driver.
+IV.	The gate driver switches the power MOSFETs at high frequency.
+V.	The MOSFET output is filtered using an LC filter.
+VI.	The filtered signal drives the speaker.
 In this design, the audio signal is not amplified directly. Instead, it controls the duty cycle of a high frequency switching signal, which is later converted back into an amplified audio waveform.
 
 4. Component Selection and Design Logic
@@ -108,13 +108,13 @@ Screw terminals are used for:
 They provide strong mechanical connection and are suitable for high-current paths.
 
 5. Step-by-Step Working of the Circuit
-1.	Audio signal is applied to the LM311 input
-2.	LM311 generates PWM based on audio amplitude
-3.	MJE13005 supplies +15v to IR2153
-4.	IR2153 produces complementary gate signals with dead-time
-5.	IRF640 MOSFETs switch the supply rails
-6.	LC filter smoothens the output
-7.	Speaker receives amplified audio signal
+I.	Audio signal is applied to the LM311 input
+II.	LM311 generates PWM based on audio amplitude
+III.	MJE13005 supplies +15v to IR2153
+IV.	IR2153 produces complementary gate signals with dead-time
+V.	IRF640 MOSFETs switch the supply rails
+VI.	LC filter smoothens the output
+VII.	Speaker receives amplified audio signal
 
 6. Significance of the Design
 •	High efficiency compared to linear amplifiers
